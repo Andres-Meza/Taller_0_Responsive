@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotelia</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Iconos-->
+  <script src="https://kit.fontawesome.com/6131ecdde6.js"></script>
+</head>
+
+<body class="body_register">
+  <div class="container_register">
+    <div class="content_left">
+      <img src="./img/Hotelia horizontal blanco.svg" alt="">
+      <h6>Eres más que bienvenido</h6>
+    </div>
+    <div class="content_right">
+      <div class="container_form_register">
+        <h3>Regístrate</h3>
+        <div class="content_inputs">
+
+          <div class="inputs_register">
+            <label for="">Tipo de documento</label>
+            <select name="" id="">
+              <option value="" selected>Escoja una Opcion</option>
+              <option value="">T.I</option>
+              <option value="">C.C</option>
+              <option value="">Pasaporte</option>
+            </select>
+          </div>
+
+          <div class="inputs_register">
+            <label for="">Numero de Documento</label>
+            <input class="input_register" type="text" required>
+          </div>
+        </div>
+
+        <div class="content_inputs">
+          <div class="inputs_register">
+            <label for="">Nombres</label>
+            <input class="input_register" type="text" required>
+          </div>
+
+          <div class="inputs_register">
+            <label for="">Apellidos</label>
+            <input class="input_register" type="text" required>
+          </div>
+        </div>
+
+        <div class="content_inputs">
+
+          <div class="inputs_register">
+            <label for="">Fecha Nacimiento</label>
+            <input class="input_register" type="date" required>
+          </div>
+
+          <div class="inputs_register">
+            <label for="">Genero</label>
+            <div class="genero">
+              <input type="radio" name="genero" id="">Mujer
+              <input type="radio" name="genero" id="">Hombre
+              <input type="radio" name="genero" id="">Otro
+            </div>
+          </div>
+        </div>
+
+        <div class="content_inputs">
+
+          <div class="inputs_register">
+            <label for="">Email</label>
+            <input class="input_register" type="email" required>
+          </div>
+          <div class="inputs_register">
+
+            <label for="">Teléfono de Contacto</label>
+            <input class="input_register" type="text" required>
+          </div>
+        </div>
+
+        <div class="content_inputs">
+
+          <div class="inputs_register">
+            <label for="">País de Origen</label>
+            <select name="" id="">
+              <option value="" selected></option>
+              <option value="">Colombia</option>
+              <option value="">Venezuela</option>
+              <option value="">Brazil</option>
+            </select>
+          </div>
+
+          <div class="inputs_register">
+            <label for="">Foto</label>
+            <input type="file" required>
+          </div>
+        </div>
+
+        <div class="content_inputs">
+
+          <div class="inputs_register">
+            <label for="">Contraseña</label>
+            <input class="input_register" type="password" required>
+          </div>
+
+          <div class="inputs_register">
+            <label for="">Confirmar Contraseña</label>
+            <input class="input_register" type="password" required>
+          </div>
+        </div>
+        <div class="ultimo">
+          <div class="terminos">
+            <a onclick="modal.open()"><input type="checkbox" name="" id="">Acepto Terminos y condiciones</a>
+          </div>
+          <button type="submit" class="btn_submit">Ingresar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
