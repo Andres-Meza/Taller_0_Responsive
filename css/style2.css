@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+:root {
+  --azulclaro: #48d6ed;
+  --azuloscuro: rgb(51, 122, 183);
+  --azulnegro: #303342;
+  --negro: rgb(51, 51, 51);
+  --negro2: #000;
+  --gris: #b2b3b3;
+  --fondo: #fffefc;
+  --verdeazul: rgb(21, 122, 138);
+  --Magenta: #9c2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337ab7 2.89%, #0b3860 80.34%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.header {
+  display: grid;
+  background: var(--negro2);
+  align-items: center;
+  grid-template-columns: 65% 35%;
+  padding: 17px;
+}
+.logo {
+  width: 190px;
+  object-fit: cover;
+}
+.logoImage {
+  width: 100%;
+}
+[class^='h'] {
+  color: var(--blanco);
+}
+.menu {
+  padding: 10px;
+  width: 100%;
+  font-size: 20px;
+  font-family: 'Marcellus', serif;
+}
+.menu__hamburguer {
+  height: 100%;
+  display: none;
+  align-items: center;
+  width: 60px;
+  justify-content: flex-start;
+  /* margin-top:10px; */
+  padding: 0 15px;
+  cursor: pointer;
+}
+.menuIcon {
+  display: block;
+  font-size: 29px;
+  width: 60px;
+}
+.item {
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+.item:hover {
+  padding: 5px;
+  background-color: var(--azuloscuro);
+  border-radius: 5px;
+}
+/* Banner */
+.slider {
+  background: url('../img/slide1.jpg') no-repeat;
+  /* object-fit: cover; */
+  background-size: cover;
+  display: flex;
+  height: 86vh;
+  align-items: flex-end;
+  padding: 8px;
+}
+
+.title_slider {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 20%;
+  padding: 10px 20px 30px 20px;
+}
+.text_slider {
+  color: var(--blanco);
+  opacity: 1;
+}
+/* Secciones */
+.about {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  justify-content: space-between;
+  padding: 10%;
+}
+.about > p {
+  text-align: justify;
+  margin-right: 80px;
+}
+.about .logoImage {
+  width: 250px;
+}
+.about_logo {
+  width: 200px;
+}
+.features {
+  background-image: url('../img/bg-features.png');
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.features-title {
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  text-align: center;
+}
+.titleServices {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Marcellus', serif;
+  margin-top: 30px;
+}
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  padding-left: 30px;
+  margin-top: 30px;
+}
+.box {
+  text-align: center;
+  width: 250px;
+  height: 150px;
+  padding: 50px 10px 10px 10px;
+  border-radius: 7px;
+}
+
+.box i {
+  font-size: 35px;
+}
+.box i,
+.box p {
+  color: var(--blanco);
+  font-size: 24px;
+}
+.box--blue {
+  background: rgb(11, 56, 96, 0.7);
+}
+.box--dark {
+  background: rgb(0, 0, 0, 0.7);
+}
+/* sección ubicanos */
+.h1--ubication {
+  color: var(--negro2);
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-top: 30px;
+  text-align: center;
+}
+.map {
+  width: 95%;
+  margin: 2%;
+}
+.h1--address {
+  color: var(--negro2);
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  font-size: 2rem;
+  width: 900px;
+  margin-left: 20%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--azulclaro);
+}
+.h1--tel {
+  color: var(--negro2);
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  font-size: 2rem;
+  width: 600px;
+  margin-left: 45%;
+}
+/* Opiniones */
+.seccion--opiniones {
+  position: relative;
+  height: 70vh;
+}
+.seccion--opiniones h1 {
+  text-align: center;
+  background: var(--negro2);
+  padding: 10px;
+  height: 140px;
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  font-size: 29px;
+}
+.opinions {
+  position: absolute;
+  top: 70px;
+  padding-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+.opinion {
+  width: 80%;
+  height: 220px;
+  /* padding:10px; */
+  background: rgb(11, 56, 96);
+  background-image: url('../img/wave-b.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.opinionHead {
+  display: flex;
+  padding: 10px;
+}
+.opinionBody {
+  margin: 10px auto;
+  width: 85%;
+  margin-top: 18px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.fotoOpinion {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.footer {
+  background: var(--azulnegro);
+  display: grid;
+  color: var(--blanco);
+  padding-top: 10px;
+  padding-left: 150px;
+  grid-template-columns: repeat(3, auto);
+  font-family: 'Marcellus', serif;
+}
+.footer-element {
+  width: 350px;
+}
+.socialreds {
+  width: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 8px;
+}
+
+@media (max-width: 368px) {
+  /* header */
+  .menu__hamburguer {
+    display: flex;
+  }
+  .menuIcon {
+    margin-left: 280px;
+  }
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    max-width: 447px;
+    padding: 7px;
+    z-index: 20;
+  }
+  .menu {
+    position: fixed;
+    max-width: 450px;
+    width: 100%;
+    height: 50%;
+    top: 70px;
+    bottom: 0px;
+    right: 0;
+    background-color: #060e29f3;
+    backdrop-filter: blur(2px);
+    overflow-y: auto;
+    display: flex;
+    /* flex-wrap:wrap; */
+    padding: 0;
+    flex-direction: column;
+    /* padding-top:5px; */
+    justify-content: flex-start;
+    transition: transform 0.5s;
+    transform: translate(100%);
+    z-index: 20;
+  }
+  .navbar--show {
+    transform: unset;
+    width: 100%;
+  }
+  .item {
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+  }
+  .item:hover {
+    background: #337ab7;
+  }
+  .item--btn {
+    border-top: 1px solid #fff;
+  }
+  .logo {
+    position: absolute;
+    top: 10%;
+    width: 100px;
+  }
+  .slider {
+    max-width: 450px;
+    object-fit: cover;
+    height: 60vh;
+  }
+  .title_slider {
+    width: 400px;
+  }
+  .about {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* padding:5px; */
+  }
+  .title_slider .text_slider {
+    font-size: 18px;
+  }
+  .about > p {
+    margin: 0;
+    width: 100%;
+  }
+  .about_logo {
+    display: none;
+  }
+  .boxes {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .box {
+    margin-top: 5px;
+    text-align: center;
+    width: 300px;
+    height: 130px;
+    padding: 20px 10px 10px 10px;
+    border-radius: 7px;
+  }
+  .h1 .h1--address {
+    font-size: 10px;
+    width: 110px;
+  }
+  .h1--tel {
+    font-size: 10px;
+    width: 110px;
+  }
+}
